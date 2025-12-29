@@ -1,0 +1,12 @@
+[general]
+log_path = "/var/log/iptables.log"
+output_dir = "/tmp/iptables-ai"
+
+[iptables]
+iptables_save_cmd = "/sbin/iptables-save"
+iptables_list_cmd = "/sbin/iptables"
+
+[ollama]
+host = "http://127.0.0.1:11434"
+model = "llama3.1:8b"  # или ваша модель
+timeout_secs = 120
